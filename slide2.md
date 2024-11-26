@@ -81,3 +81,6 @@ else {
     
     -   If PowerShell Core is running, it evaluates the OS and prints the appropriate message.
     -   If it's PowerShell Desktop, it assumes **Windows** (since Desktop runs only on Windows).
+  
+    **Reference:** [RuntimeInformation Class (System.Runtime.InteropServices) | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.interopservices.runtimeinformation?view=net-9.0)
+
