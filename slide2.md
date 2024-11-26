@@ -34,8 +34,9 @@
     Start-Process -FilePath "notepad.exe"
 
     ## Script Example
+## Script Example
 **Print the OS you are logged in**
-```bash
+```powershell
 if ($IsLinux) {
     Write-Host "Linux"
 }
