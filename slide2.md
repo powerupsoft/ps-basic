@@ -19,7 +19,7 @@ $\Huge\color{#9900FF}{\textsf{Managing Services}}$
 **Check the status of a specific service**
 
     Get-Service -Name "Spooler" | Select-Object Status
-## Managing Processes
+$\Huge\color{#9900FF}{\textsf{Managing Proceses}}$
 
 **List all running processes**
 
@@ -34,7 +34,7 @@ $\Huge\color{#9900FF}{\textsf{Managing Services}}$
     Start-Process -FilePath "notepad.exe"
 
     ## Script Example
-## Script Examples
+$\Huge\color{#9900FF}{\textsf{Script Examples}}$
 **Print the OS you are logged in**
 ```powershell
 if ($IsLinux) {
