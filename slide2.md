@@ -1,6 +1,6 @@
 $\Huge\color{#9900FF}{\textsf{Managing Services}}$
 
-**List all services**
+$\Large\color{#e67e22}{\textsf{List all services}}$
 
     Get-Service
 
