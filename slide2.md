@@ -35,6 +35,7 @@ $\Huge\color{#9900FF}{\textsf{Managing Proceses}}$
 
     ## Script Example
 $\Huge\color{#9900FF}{\textsf{Script Examples}}$
+
 **Print the OS you are logged in**
 ```powershell
 if ($IsLinux) {
