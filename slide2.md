@@ -68,3 +68,16 @@ else {
 }
 
 ```
+### Explanation:
+
+1.  **`$PSVersionTable.PSEdition`**
+    
+    -   Checks if the current PowerShell session is running **Core** (cross-platform) or **Desktop** (Windows only).
+2.  **`[System.Runtime.InteropServices.RuntimeInformation]`**
+    
+    -   A .NET class used to determine the operating system type.
+    -   `IsOSPlatform()` checks for specific platforms like Linux, macOS (OSX), or Windows.
+3.  **Platform Detection Logic:**
+    
+    -   If PowerShell Core is running, it evaluates the OS and prints the appropriate message.
+    -   If it's PowerShell Desktop, it assumes **Windows** (since Desktop runs only on Windows).
