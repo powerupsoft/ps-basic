@@ -34,7 +34,7 @@
     Start-Process -FilePath "notepad.exe"
 
     ## Script Example
-## Script Example
+## Script Examples
 **Print the OS you are logged in**
 ```powershell
 if ($IsLinux) {
@@ -46,4 +46,25 @@ elseif ($IsMacOS) {
 elseif ($IsWindows) {
     Write-Host "Windows"
 }
+```
+**More complex example**
+```powershell
+if ($PSVersionTable.PSEdition -eq "Core") {
+    # Cross-platform PowerShell Core
+    $os = [System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform([System.Runtime.InteropServices.OSPlatform]::Linux)
+    if ($os) {
+        Write-Host "Linux"
+    }
+    elseif ([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform([System.Runtime.InteropServices.OSPlatform]::OSX)) {
+        Write-Host "macOS"
+    }
+    elseif ([System.Runtime.InteropServices.RuntimeInformation]::IsOSPlatform([System.Runtime.InteropServices.OSPlatform]::Windows)) {
+        Write-Host "Windows"
+    }
+}
+else {
+    # PowerShell Desktop (Windows only)
+    Write-Host "Windows"
+}
+
 ```
