@@ -1,4 +1,6 @@
+<span style="color:blue">
 # Managing Services
+</span>
 ## List all services
 
     Get-Service
