@@ -68,7 +68,7 @@ else {
 }
 
 ```
-### Explanation:
+$\color{Teal}{\textsf{Explanation}}$:
 
 1.  **`$PSVersionTable.PSEdition`**
     
