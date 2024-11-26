@@ -1,22 +1,21 @@
 $\Huge\color{#9900FF}{\textsf{Managing Services}}$
 
-$\normalsize\color{#2ecc71}{\textsf{List all services}}$
+$\normalsize\color{#2ecc71}{\texttt{List all services}}$
 
     Get-Service
 
-**Start a service**
+$\normalsize\color{#2ecc71}{\texttt{Start a service}}$
 
     Start-Service -Name "Spooler"
 
-**Stop a service**
+$\normalsize\color{#2ecc71}{\texttt{Stop a service}}$
 
     Stop-Service -Name "Spooler"
-
-**Restart a service**
+$\normalsize\color{#2ecc71}{\texttt{Restart a service}}$
 
     Restart-Service -Name "Spooler"
 
-**Check the status of a specific service**
+$\normalsize\color{#2ecc71}{\texttt{Check the status of a specific service}}$
 
     Get-Service -Name "Spooler" | Select-Object Status
 $\Huge\color{#9900FF}{\textsf{Managing Proceses}}$
