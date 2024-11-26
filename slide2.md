@@ -1,4 +1,4 @@
-$\Huge\color{Red}{\textsf{Managing Services}}$
+$\Huge\color{#9900FF}{\textsf{Managing Services}}$
 
 **List all services**
 
