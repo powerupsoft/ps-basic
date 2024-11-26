@@ -32,3 +32,17 @@
 **Start a new instance of Notepad**
 
     Start-Process -FilePath "notepad.exe"
+
+    ## Script Example
+**Print the OS you are logged in**
+```bash
+if ($IsLinux) {
+    Write-Host "Linux"
+}
+elseif ($IsMacOS) {
+    Write-Host "macOS"
+}
+elseif ($IsWindows) {
+    Write-Host "Windows"
+}
+```
